@@ -10,6 +10,7 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.precompile += %w( blogs.scss )
 Rails.application.config.assets.precompile += %w( portfolios.scss )
 Rails.application.config.assets.precompile += %w( orbit-1.scss )
+Rails.application.config.assets.paths << "#{Rails.root}/app/assets/videos" 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
