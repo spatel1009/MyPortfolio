@@ -36,6 +36,10 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'sohel_view_tool', '~> 0.1.0'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
+gem 'carrierwave-aws', '~> 1.0'
+gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
+gem 'carrierwave', '~> 1.2', '>= 1.2.3'
+gem 'mini_magick', '~> 4.9', '>= 4.9.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
