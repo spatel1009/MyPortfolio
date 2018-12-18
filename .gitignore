@@ -28,3 +28,6 @@
 
 # Don't want to show secrets
 /config/credentials.yml.enc
+.env
+
+/public/uploads/tmp/*
