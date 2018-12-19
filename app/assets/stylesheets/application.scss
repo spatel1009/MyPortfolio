@@ -29,7 +29,7 @@ a:hover {
 
 html,
 body {
-  height: 120%;
+  height: 100%;
   text-align: center;
 }
 
@@ -171,4 +171,17 @@ body {
   transform: translateX(-50%) translateY(-50%);
   background-size: cover;
   background: rgba(0, 0, 0, .5);
+}
+
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+
+.tech-news a {
+  color: blue;
+}
+
+.tech-news > .card {
+  padding: 25px;
 }

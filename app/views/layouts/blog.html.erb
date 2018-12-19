@@ -16,12 +16,9 @@
 
   <body>
     
-    
-    <%= login_helper %>
+    <%= render 'shared/navbar' %>
 
     <%= yield %>
-
-    <%= render 'shared/navbar', location: 'bottom' %>
 
     <%= source_helper %>
     

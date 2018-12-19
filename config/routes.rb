@@ -9,12 +9,15 @@ Rails.application.routes.draw do
   
   get 'about', to: 'pages#about'
   get 'resume', to: 'resumes#resume'
+  get 'tech-news', to: 'pages#tech_news'
 
   resources :blogs do
     member do
       get :toggle_status
     end
   end
- 
+  
+  mount ActionCable.server => '/cable'
+
   root to: 'pages#home'
 end
