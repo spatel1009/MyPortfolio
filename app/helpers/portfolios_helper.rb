@@ -4,4 +4,8 @@ module PortfoliosHelper
       link_to 'Create New Portfolio', new_portfolio_path
     end
   end
+
+  def my_github
+    link_to 'my personal github', 'https://www.github.com/spatel1009'
+  end
 end
