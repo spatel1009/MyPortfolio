@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  access user:{except: [:create]}, site_admin: :all
   def create
     @comment = current_user.comments.build(comment_params)
   end

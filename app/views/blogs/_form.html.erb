@@ -1,13 +1,32 @@
 <%= form_with(model: blog, local: true) do |form| %>
   <% if blog.errors.any? %>
     <% blog.errors.full_messages.each do |e| %>
-      <%= js add_gritter(error, title: 'Sohel Patel Portfolio', sticky: false) %>
+      <%= js add_gritter(e, title: 'Sohel Patel Portfolio', sticky: false) %>
     <% end %>
   <% end %>
 
   <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title %>
+  </div>
+
+  <div class='field'>
+    <%= form.label :topic_id %>
+    <%= form.collection_select(:topic_id, Topic.all, :id, :title,
+                              {
+                                include_blank: true
+                              }
+                            ) %>
+  </div>
+
+  <div class='field'>
+    <%= form.radio_button :status, 'draft' %>
+    <%= form.label :status, 'Draft' %>
+  </div>
+
+  <div class='field'>
+    <%= form.radio_button :status, 'published' %>
+    <%= form.label :status, 'Publish' %>
   </div>
 
   <div class="field">
